@@ -4,13 +4,16 @@ import MapView, { Marker } from 'react-native-maps';
 
 export default function LojaFisica() {
   return (
-   
-    <View style={styles.container}>
-      
+      <ImageBackground 
+                  resizeMode='cover' 
+                  source={require('../assets/brinquedo.jpg')} 
+                  style={styles.container}
+                >
+
       <Text style={styles.titulo}>Nossas lojas físicas!</Text>
 
       <MapView 
-        style={{ width: '80%', height: '60%' }} 
+        style={{ width: '90%', height: '90%' }} 
         region={{
           latitude: -23.5505,  
           longitude: -46.6333,
@@ -66,7 +69,7 @@ export default function LojaFisica() {
         />
         
       </MapView>
-    </View>
+    </ImageBackground>
 
   );
 }

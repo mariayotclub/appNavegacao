@@ -3,13 +3,14 @@ import { StyleSheet, Text, View, Image, ImageBackground, Touchable } from 'react
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+
 import {FontAwesome6} from '@react-native-vector-icons/fontawesome6';
 
 import Home from   './screens/Home';
-import Config from './screens/Config';
 import Sobre from  './screens/Sobre';
 import Perfil from  './screens/Perfil';
 import LojaFisica from  './screens/LojaFisica';
+import Finalizar from  './screens/Finalizar';
 
 const Tab = createBottomTabNavigator();
 
@@ -43,21 +44,34 @@ export default function App() {
               />
           }}
         />
-        
+  
         <Tab.Screen 
-          name='Configurações'  
-          component={Config}
+          name='Loja Física'          
+          component={LojaFisica}
           options={{
             tabBarIcon: ({focused}) => 
               <FontAwesome6 
-                name='sliders' 
+                name='store' 
                 size={20} 
                 iconStyle='solid' 
                 color={focused ? '#61a5ffff' : '#ffffffff'}
               />
           }}
         />
-        <Tab.Screen 
+          <Tab.Screen 
+          name='Carrinho'          
+          component={Finalizar}
+          options={{
+            tabBarIcon: ({focused}) => 
+              <FontAwesome6 
+                name='cart-shopping' 
+                size={20} 
+                iconStyle='solid' 
+                color={focused ? '#61a5ffff' : '#ffffffff'}
+              />
+          }}
+        />
+           <Tab.Screen 
           name='Sobre'          
           component={Sobre}
           options={{
@@ -70,6 +84,7 @@ export default function App() {
               />
           }}
         />
+
         <Tab.Screen 
           name='Perfil'  
           component={Perfil}
@@ -77,20 +92,6 @@ export default function App() {
             tabBarIcon: ({focused}) => 
               <FontAwesome6 
                 name='user' 
-                size={20} 
-                iconStyle='solid' 
-                color={focused ? '#61a5ffff' : '#ffffffff'}
-              />
-          }}
-        />
-
-        <Tab.Screen 
-          name='Loja Física'          
-          component={LojaFisica}
-          options={{
-            tabBarIcon: ({focused}) => 
-              <FontAwesome6 
-                name='store' 
                 size={20} 
                 iconStyle='solid' 
                 color={focused ? '#61a5ffff' : '#ffffffff'}

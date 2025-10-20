@@ -11,7 +11,7 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: 700,
     marginBottom: 20,
-    color: '#4668ffff'
+    color: '#17276dff'
   },
   botao: {
     backgroundColor: '#000000ff',
@@ -39,7 +39,9 @@ export default StyleSheet.create({
     margin: 10,
     padding: 20,
     textAlign: 'center',
-    color: '#000000ff',
+    color: '#ffffffff',
+    backgroundColor: '#0f388388',
+    borderRadius: 70
     
   },
   userFoto: {
@@ -68,5 +70,29 @@ export default StyleSheet.create({
   icone: {
     width: 80,
     height: 80
+  },
+  botaoComprar: {
+    backgroundColor: '#3b77d1ff',
+    padding: 10,
+    borderRadius: 100,
+    textAlign: 'center',
+    color: '#ffffff',
+    fontWeight: 'bold',
+    marginTop: 10,
+    width: 100
+  },
+  lugarBotao: {
+    flexDirection: 'row',
+    paddingLeft: 10,
+    marginTop: 5
+  },
+  input: {
+    width: 200,
+    padding: 10,
+    backgroundColor: '#ffffffaa',
+    borderColor: '#3773c2ff',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginTop: 10
   }
 });
