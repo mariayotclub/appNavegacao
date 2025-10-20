@@ -40,7 +40,7 @@ export default StyleSheet.create({
     padding: 20,
     textAlign: 'center',
     color: '#ffffffff',
-    backgroundColor: '#0f388388',
+    backgroundColor: '#0053cf7a',
     borderRadius: 70
     
   },

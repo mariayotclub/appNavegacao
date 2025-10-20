@@ -63,14 +63,15 @@ export default function Finalizar() {
 
         }
       />
-            <View style={{ justifyContent: 'center', marginBottom: 100 }}>
-            
+            <View style={{ backgroundColor: '#ffffff7a', width: '100%', justifyContent: 'center', position: 'absolute', bottom: 0, flexDirection: 'row', alignItems: 'center', padding: 10 }}>
+            <Text style={{ fontSize: 20, marginBottom: 5, paddingRight: 20 }}>Total: R$ 179,70 + Frete</Text>
+              <View>
               <TouchableOpacity
                 title="Finalizar Compra"
-                onPress={ () => alert("Pedido finalizado!!!") }
-              >
-                <Text style={{ width: 200, textAlign: 'center', padding: 12, backgroundColor: '#3b77d1ff', color: 'white', borderRadius: 60 }}>Finalizar Compra</Text>
+                onPress={ () => alert("Pedido finalizado!!!") }>
+                <Text style={{ width: 150, textAlign: 'center', padding: 12, backgroundColor: '#3b77d1ff', color: 'white', borderRadius: 60 }}>Finalizar Compra</Text>
               </TouchableOpacity>
+              </View>
               </View>
 
     </ImageBackground>
