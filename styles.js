@@ -10,20 +10,8 @@ export default StyleSheet.create({
   titulo: {
     fontSize: 20,
     fontWeight: 700,
-    marginBottom: 20,
+    marginBottom: 5,
     color: '#17276dff'
-  },
-  botao: {
-    backgroundColor: '#000000ff',
-    borderColor: '#000000ff',
-    borderWidth: 2,
-    borderRadius: 10,
-    padding: 10
-  }, 
-  botaoTexto: {
-    fontSize: 15,
-    color: '#fff',
-    fontWeight: 700
   },
   input: {
     padding: 10,
